@@ -1,0 +1,47 @@
+{
+    "name": "markdown-table-of-contents",
+    "displayName": "MarkDown Table of Contents",
+    "description": "Displays CodeLens items atop MarkDown headers providing a back to top action on non-title headers and a header jump quick pick on the title header",
+    "version": "1.0.0",
+    "publisher": "TomasHubelbauer",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TomasHubelbauer/vscode-markdown-table-of-contents.git"
+    },
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:markdown"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.jumpToHeader",
+                "title": "Jump to header"
+            },
+            {
+                "command": "extension.jumpToTop",
+                "title": "Jump to top"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}

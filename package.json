@@ -1,8 +1,8 @@
 {
     "name": "markdown-table-of-contents",
-    "displayName": "MarkDown Table of Contents",
+    "displayName": "[OBSOLETE] MarkDown Table of Contents",
     "description": "Displays CodeLens items atop MarkDown headers providing a back to top action on non-title headers and a header jump quick pick on the title header",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "TomasHubelbauer",
     "repository": {
         "type": "git",
